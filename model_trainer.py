@@ -94,7 +94,7 @@ if __name__ == "__main__":
 	print(out.format(epochs,batches,train_len,test_len, max_len))
 
 	####################ACTUAL MODEL FITTING##################
-	model = MalMem(100, 150, 128, 12, 292330)
+	model = MalMem(100, 150, 128, 12, max_len)
 	model.compile(optimizer='Adam', loss='mse')
 	print(model.summary())
 	model.fit(train_generator(batches, args.path ,train_len),verbose=1, validation_data=test_generator(batches, args.path, test_len), batch_size=batches, epochs=epochs)
