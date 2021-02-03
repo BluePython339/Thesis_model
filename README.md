@@ -14,7 +14,7 @@ this dataset has the smallest seqence size of the 2 per seqence and each unique 
 
 
 ## How to use
-unzip the required dataset.
+pick the correct dataset
 
 for verrifying that the dataset can be read properly 
 `python3 model_trainer.py -v -c [correct config file correlating to dataset] -p path_to_dataset_folders`
